@@ -20,7 +20,7 @@ def posts_of_5():
 # задача 2
 def city_weather(city_name: str) -> None:
     city_coordinates = requests.get(f'http://api.openweathermap.org/geo/1.0/direct?q={
-                                    city_name}&limit=5&appid=a31bf60829b8edb1b7d099432ef301f7')
+                                    city_name}&limit=5&appid=a31bf60829b8edb1b7d099432ef301f7x')
     if city_coordinates.status_code == 200:
         information_of_city = city_coordinates.json()
         lat = information_of_city[0]['lat']
